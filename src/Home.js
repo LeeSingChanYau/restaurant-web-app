@@ -9,7 +9,7 @@ function Home(props) {
   return (
     <div className='App'>
       <NavBar numItems={props.numItems} items={props.items}/>
-      <Outlet />
+      <Outlet items={props.items} setItems={props.setItems}/>
       <a href="https://wa.link/da9ua9" target="_blank" rel="noreferrer">
       <Whatsapp className='whatsapp'/>
       </a>

@@ -8,6 +8,13 @@
   cursor: pointer;
 }
 
+.food-image-checkout {
+  width: 15%;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+
 .add-icon {
   cursor: pointer;
 }

@@ -7,6 +7,7 @@ import Info from './Info/Info';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 import Contacto from './Contacto/Contacto';
+import Checkout from './Checkout/Checkout';
 
 
 export default function App() {
@@ -19,9 +20,10 @@ export default function App() {
         setNumItems={setNumItems} items={items} setItems={setItems}/>}>
           <Route index element={<Menu numItems={numItems} setNumItems={setNumItems} 
           items={items} setItems={setItems}/>} />
-          <Route path="Menu" element={<Menu numItems={numItems} setNumItems={setNumItems}/>} />
+          <Route path="Menu" element={<Menu numItems={numItems} setNumItems={setNumItems} items={items} setItems={setItems}/> } />
           <Route path="Info" element={<Info />} />
           <Route path="Contacto" element={<Contacto />} />
+          <Route path="Checkout" element={<Checkout items={items} setItems={setItems}/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -54,15 +54,17 @@ export default function NavBar({numItems, items}) {
         :
         <div>
           {items.map((item, index) => (
-            <>
-            <ListItem className='product-item' key={index}>
+            <div key={index}>
+            <ListItem className='product-item' >
               <p>{item.name} x {item.count}</p>
               <p>$ {item.price * item.count}</p>
             </ListItem>
             <Divider style={{ background: 'black' }}/>
-            </>
+            </div>
           ))}
-          <Button>Checkout</Button>
+          <Link to="/Checkout" style={{ textDecoration: 'none' }}>
+            <Button>Checkout</Button>
+          </Link>
         </div>
       }
     </div>

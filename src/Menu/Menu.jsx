@@ -34,7 +34,7 @@ const Menu = ({numItems, items, setNumItems, setItems}) => {
                   <p>{item.name}</p>
                   <AddIcon className='add-icon' 
                   onClick={() => {
-                    addItemToCart({name: item.name, price: item.price, count: 1})
+                    addItemToCart({name: item.name, price: item.price, count: 1, id: item.id})
                     }}/>
                 </div>
               </Grid>
@@ -51,7 +51,7 @@ const Menu = ({numItems, items, setNumItems, setItems}) => {
                   <p>{item.name}</p>
                   <AddIcon className='add-icon' 
                   onClick={() => {
-                    addItemToCart({name: item.name, price: item.price, count: 1})
+                    addItemToCart({name: item.name, price: item.price, count: 1, id: item.id})
                     }}/>
                 </div>
               </Grid>
@@ -68,7 +68,7 @@ const Menu = ({numItems, items, setNumItems, setItems}) => {
                   <p>{item.name}</p>
                   <AddIcon className='add-icon' 
                   onClick={() => {
-                    addItemToCart({name: item.name, price: item.price, count: 1})
+                    addItemToCart({name: item.name, price: item.price, count: 1, id: item.id})
                     }}/>
                 </div>
               </Grid>
