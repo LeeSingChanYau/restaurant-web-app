@@ -3,12 +3,12 @@ import AddIcon from '@mui/icons-material/Add';
 import data from '../data/data';
 
 
-const Menu = ({numItems, items, setNumItems, setItems}) => {
+const Menu = ({numItems, items, setNumItems, setItems, setTotal, total}) => {
 
     const addItemToCart = (item) => {
       const index = items.findIndex(i => i.name === item.name);
       setNumItems(numItems + 1)
-
+      setTotal(total + item.price);
       if (index === -1) {
         setItems(prevItems => [...prevItems, item]);
       } else {

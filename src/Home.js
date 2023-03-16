@@ -8,7 +8,7 @@ import {ReactComponent as Whatsapp} from './images/WhatsApp.svg';
 function Home(props) {
   return (
     <div className='App'>
-      <NavBar numItems={props.numItems} items={props.items}/>
+      <NavBar numItems={props.numItems} items={props.items} total={props.total}/>
       <Outlet items={props.items} setItems={props.setItems}/>
       <a href="https://wa.link/da9ua9" target="_blank" rel="noreferrer">
       <Whatsapp className='whatsapp'/>

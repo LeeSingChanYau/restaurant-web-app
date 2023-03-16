@@ -30,7 +30,7 @@ const data = [
 ];
 
 
-export default function NavBar({numItems, items}) {
+export default function NavBar({numItems, items, total}) {
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -62,6 +62,9 @@ export default function NavBar({numItems, items}) {
             <Divider style={{ background: 'black' }}/>
             </div>
           ))}
+          <ListItem className='product-item' >
+              <p>Total: ${total}</p>
+          </ListItem>
           <Link to="/Checkout" style={{ textDecoration: 'none' }}>
             <Button>Checkout</Button>
           </Link>
